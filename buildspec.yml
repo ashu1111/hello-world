@@ -39,10 +39,10 @@ arn:aws:codebuild:your-region:your-aws-account-id:report-group/report-group-name
       - "**/*"
     base-directory: 'target/tests/reports'
     discard-paths: no
-  reportGroupCucumberJson:
-    files:
-      - 'cucumber/target/cucumber-tests.xml'
-    discard-paths: yes
+    reportGroupCucumberJson:
+      files:
+        - 'cucumber/target/cucumber-tests.xml'
+      discard-paths: yes
     file-format: CUCUMBERJSON # default is JUNITXML
 artifacts:
   files:
